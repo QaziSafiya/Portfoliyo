@@ -1,13 +1,28 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@400;500;600&family=Gwendolyn&family=Martel:wght@300&family=Nunito&family=Nunito+Sans&family=Quintessential&family=Rubik:wght@300&display=swap');
+
+@layer base{
+    body{
+        @apply font-[nunito];
+    }
+    li{
+        @apply px-5;
+        @apply cursor-pointer;
+        @apply my-2;
+    }
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.content-div{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+}
+.content-div:hover{
+    background-image: linear-gradient(
+          to right rgb(101, 57, 101) rgb(121, 71, 121)
+    )!important;
 }
