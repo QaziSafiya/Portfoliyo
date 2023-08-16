@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { FaBars  } from "react-icons/fa";
 import {FaTimes}  from "react-icons/fa";
-import { FaLinkedin , FaGithub  ,FaInstagram ,FaMailBulk , FaLink} from "react-icons/fa";
+import { FaLinkedin , FaGithub  ,FaInstagram ,FaMailBulk , FaLink } from "react-icons/fa";
 import { Link } from 'react-scroll';
 
 const Navbar = () => {
